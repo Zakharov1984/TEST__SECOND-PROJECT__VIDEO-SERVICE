@@ -13,10 +13,11 @@
 }
 
 .container {
-    max-width: 1320px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
-
+@import 'block/_btn';
+@import 'block/_header';
 @import '_media';

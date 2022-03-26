@@ -1,0 +1,48 @@
+.header {
+    height: 38px;
+    margin-top: 32px;
+    &__wrapper { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 182px;
+    }
+    &__logo-img {
+        max-width: 100%;
+    }
+    &__search {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__search-input {
+        width: 320px;
+        margin-right: 32px;
+        padding: 0 10px 6px 0;
+        border: none;
+        border-bottom: 1px solid $COLOR_GRAY;
+        @include text;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__search-button {
+        border: none;
+        background-color: $COLOR_WHITE;
+        @include text;
+        color: $COLOR_RED;
+    }
+    &__signIn {
+        display: flex;
+        align-items: center;
+    }
+    &__signIn-login {
+        display: none;
+        margin-right: 16px;
+        @include text;
+    }
+}
+
+
+
