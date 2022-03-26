@@ -1,0 +1,48 @@
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .header {
+        &__search-input {
+            width: 230px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .header {
+        &__wrapper {
+            min-height: 100px;
+            align-items: flex-start;
+        }
+        &__search {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        &__search-input {
+            width: 100%;
+        }
+    }
+    
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+
+}

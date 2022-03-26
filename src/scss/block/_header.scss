@@ -1,13 +1,15 @@
 .header {
-    height: 38px;
     margin-top: 32px;
-    &__wrapper { 
+    &__wrapper {
+        min-height: 38px;
+        position: relative; 
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     &__logo {
         width: 182px;
+        flex-shrink: 0;
     }
     &__logo-img {
         max-width: 100%;
@@ -19,7 +21,7 @@
     &__search-input {
         width: 320px;
         margin-right: 32px;
-        padding: 0 10px 6px 0;
+        padding: 0 10px 5px 0;
         border: none;
         border-bottom: 1px solid $COLOR_GRAY;
         @include text;
