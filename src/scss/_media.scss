@@ -33,6 +33,11 @@
             justify-content: center;
         }
     }
+    .footer {
+        &__info-item {
+            font-size: 13px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -61,6 +66,11 @@
         &__item-name {
             text-align: center;
         }    
+    }
+    .footer {
+        &__wrapper {
+            align-items: center;
+        }
     }         
 }
 

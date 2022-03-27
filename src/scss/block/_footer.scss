@@ -1,0 +1,37 @@
+.footer {
+    min-height: 120px;
+    padding: 22px 0 28px;
+    background-color: $COLOR_GRAY-LIGHT;
+    &__wrapper {
+        display: flex;
+        align-items: flex-end;
+    }
+    &__logo-img {
+        display: block;
+        width: 32px;
+        height: 64px;
+        margin-right: 40px;
+    }
+    &__info-item {
+        display: block;
+        margin: 0;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        color: $COLOR_GRAY;
+        text-decoration: none;
+    }
+    &__info-numbers {
+        margin-top: 6px;
+    }
+    &__info-number {
+        text-decoration: none;
+        color: $COLOR_GRAY;
+    }
+    &__info-site {
+        font-weight: 500;
+        line-height: 1;
+        color: $COLOR_BLUE;
+        margin-top: 10px;
+    }
+}
