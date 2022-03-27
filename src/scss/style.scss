@@ -22,7 +22,17 @@ body {
     padding: 0 10px;
 }
 
+h2 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 @import 'block/_btn';
+@import 'block/_title';
 @import 'block/_header';
 @import 'block/_tabs';
 @import 'block/_content';

@@ -13,6 +13,18 @@
             width: 230px;
         }
     }
+    .novelties {
+        &__title {
+            padding-left: 0;
+            text-align: center;
+        }
+        &__title::before {
+            left: 39%;
+        }
+        &__items {
+            justify-content: center;
+        }
+    }
 }
 
 @media (max-width: 767px) {
