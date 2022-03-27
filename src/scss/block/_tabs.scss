@@ -1,0 +1,21 @@
+.tabs {
+    display: flex;
+    justify-content: center;
+    padding-top: 44px;
+    &__item {
+        border: none;
+        background-color: $COLOR_WHITE;
+        padding-bottom: 12px;
+        font-size: 28px;
+        line-height: 1;
+        font-weight: 500;
+        color: $COLOR_GRAY;
+    }
+    &__item_active {
+        color: $COLOR_RED;
+        border-bottom: 2px solid $COLOR_RED;
+    }
+    &__item_mr-24 {
+        margin-right: 24px;
+    }
+}
