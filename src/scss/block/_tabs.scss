@@ -3,9 +3,9 @@
     justify-content: center;
     padding-top: 44px;
     &__item {
+        height: 42px;
         border: none;
         background-color: $COLOR_WHITE;
-        padding-bottom: 12px;
         font-size: 28px;
         line-height: 1;
         font-weight: 500;

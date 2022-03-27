@@ -44,5 +44,14 @@
 }
 
 @media (max-width: 320px) {
-
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+        &__item_mr-24 {
+            margin-right: 0;
+        }
+        &__item_mt-20 {
+            margin-top: 20px;
+        }
+    }
 }
