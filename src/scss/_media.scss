@@ -46,13 +46,22 @@
             width: 100%;
         }
     }
-    
+    .novelties {
+        &__title::before {
+            left: 35%;
+        }    
+    }         
 }
 
 @media (max-width: 575px) {
     .container {
         max-width: 100%;
     }
+    .novelties {
+        &__title::before {
+            left: calc(50% - 76px);
+        }    
+    }         
 }
 
 @media (max-width: 320px) {
