@@ -82,17 +82,30 @@
         box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
         cursor: pointer;
         &[data-genre="comedy"] {
-            background: url('../icons/emoji/smile.svg') center center / 48px 48px no-repeat, linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+            background: url('../icons/emoji/smile.svg') center center / 48px 48px no-repeat, linear-gradient(127.83deg, rgba(242, 201, 76, 0.8) 8.44%, rgba(242, 154, 74, 0.8) 91.36%);
+            &:hover {
+                background: url('../icons/emoji/smile.svg') center center / 48px 48px no-repeat, linear-gradient(127.83deg, rgba(242, 201, 76, 1) 8.44%, rgba(242, 154, 74, 1) 91.36%);
+            }
         }
         &[data-genre="drama"] {
-            background: url('../icons/emoji/cry.svg') center center / 48px 48px no-repeat, linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);;
+            background: url('../icons/emoji/cry.svg') center center / 48px 48px no-repeat, linear-gradient(127.83deg, rgba(242, 153, 74, 0.8) 8.44%, rgba(235, 87, 87, 0.8) 91.36%);
+            &:hover {
+                background: url('../icons/emoji/cry.svg') center center / 48px 48px no-repeat, linear-gradient(127.83deg, rgba(242, 153, 74, 1) 8.44%, rgba(235, 87, 87, 1) 91.36%);
+            }
         }
         &[data-genre="fiction"] {
-            background: url('../icons/emoji/alien.svg') center center / 48px 48px no-repeat, linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);;
+            background: url('../icons/emoji/alien.svg') center center / 48px 48px no-repeat, linear-gradient(127.83deg, rgba(86, 204, 242, 0.8) 8.44%, rgba(47, 128, 237, 0.8) 91.36%);
+            &:hover {
+                background: url('../icons/emoji/alien.svg') center center / 48px 48px no-repeat, linear-gradient(127.83deg, rgba(86, 204, 242, 1) 8.44%, rgba(47, 128, 237, 1) 91.36%);
+            }
         }
         &[data-genre="horror"] {
-            background: url('../icons/emoji/ghost.svg') center center / 48px 48px no-repeat, linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);;
+            background: url('../icons/emoji/ghost.svg') center center / 48px 48px no-repeat, linear-gradient(127.83deg, rgba(130, 130, 130, 0.8) 8.44%, rgba(51, 51, 51, 0.8) 91.36%);
+            &:hover {
+                background: url('../icons/emoji/ghost.svg') center center / 48px 48px no-repeat, linear-gradient(127.83deg, rgba(130, 130, 130, 1) 8.44%, rgba(51, 51, 51, 1) 91.36%);
+            }
         }
+
     }
     &__item-link {
         display: block;
