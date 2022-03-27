@@ -1,11 +1,9 @@
 .content {
     padding-bottom: 72px;
 }
-.content-films {
-    padding-top: 32px;
-}
 
 .novelties {
+    padding-top: 32px;
     &__title {
         position: relative;
         padding-left: 32px;
@@ -66,5 +64,50 @@
         font-weight: 400;
         color: $COLOR_GRAY;
         text-align: left;
+    }
+}
+
+.genres {
+    padding-top: 32px;
+    &__items {
+        display: grid;
+        grid-template: 208px / repeat(auto-fill, 280px);
+        grid-auto-columns: 280px;
+        grid-auto-rows: 208px;
+        gap: 20px;
+        padding-top: 16px;
+    }
+    &__item {
+        border-radius: 6px;
+        box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        &[data-genre="comedy"] {
+            background: url('../icons/emoji/smile.svg') center center / 48px 48px no-repeat, linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+        }
+        &[data-genre="drama"] {
+            background: url('../icons/emoji/cry.svg') center center / 48px 48px no-repeat, linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);;
+        }
+        &[data-genre="fiction"] {
+            background: url('../icons/emoji/alien.svg') center center / 48px 48px no-repeat, linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);;
+        }
+        &[data-genre="horror"] {
+            background: url('../icons/emoji/ghost.svg') center center / 48px 48px no-repeat, linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);;
+        }
+    }
+    &__item-link {
+        display: block;
+        height: 100%;
+        position: relative;
+    }
+    &__item-name {
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 400;
+        color: $COLOR_WHITE;
+        text-decoration: none;
+        position: absolute;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

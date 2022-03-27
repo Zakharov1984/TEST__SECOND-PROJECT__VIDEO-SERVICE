@@ -25,6 +25,14 @@
             justify-content: center;
         }
     }
+    .genres {
+        &__title {
+            text-align: center;
+        }
+        &__items {
+            justify-content: center;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -49,6 +57,9 @@
     .novelties {
         &__title::before {
             left: 35%;
+        }
+        &__item-name {
+            text-align: center;
         }    
     }         
 }
