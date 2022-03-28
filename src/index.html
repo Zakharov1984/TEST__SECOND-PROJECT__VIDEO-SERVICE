@@ -19,8 +19,10 @@
                     <button class="header__search-button">Найти</button>
                 </div>
                 <div class="header__signIn">
-                    <span class="header__signIn-login">Константин К.</span>
+                    <span class="header__signIn-login" title="Изменить Имя"></span>
                     <button class="header__signIn-entry btn">Войти</button>
+                    <button class="header__signIn-goOut btn btn_color-red btn_bg-none">Выйти</button>
+                    <input type="text" name="changeName" id="changeName" class="header__signIn-changeName">
                 </div>
             </div>
         </div>
@@ -214,6 +216,7 @@
     </footer>
     <div class="modal">
         <form action="#" class="entry">
+            <div class="entry__close"></div>
             <h2 class="entry__title">Вход</h2>
             <input type="text" name="name" id="name" class="entry__login" placeholder="Логин">
             <input type="password" name="password" id="password" class="entry__password" placeholder="Пароль">
@@ -223,5 +226,6 @@
         </form>
     </div>
     <script src="js/switchContent.js"></script>
+    <script src="js/entry.js"></script>
 </body>
 </html>

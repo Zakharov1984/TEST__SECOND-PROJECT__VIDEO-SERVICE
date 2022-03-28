@@ -11,4 +11,10 @@
     &:hover {
         background-color: $COLOR_RED_HOVER;
     }
+    &_color-red {
+        color: $COLOR_RED;
+    }
+    &_bg-none {
+        background-color: $COLOR_WHITE
+    }
 }

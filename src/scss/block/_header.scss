@@ -16,6 +16,7 @@
     &__search {
         display: flex;
         align-items: flex-start;
+        margin-right: 56px;
     }
     &__search-input {
         width: 320px;
@@ -35,13 +36,54 @@
         color: $COLOR_RED;
     }
     &__signIn {
+        position: relative;
         display: flex;
         align-items: center;
     }
     &__signIn-login {
-        display: none;
-        margin-right: 16px;
+        position: absolute;
+        top: 50%;
+        right: 68px;
+        transform: translateY(-50%);
         @include text;
+        white-space: pre;
+        cursor: pointer;
+    }
+    &__signIn-login_disabled {
+        display: none;
+    }
+    &__signIn-entry_disabled {
+        display: none;
+    }
+    &__signIn-goOut {
+        display: none;
+        width: auto;
+        &:hover {
+            background-color: $COLOR_WHITE;
+        }
+    }
+    &__signIn-goOut_active {
+        display: block;
+    }
+    &__signIn-changeName {
+        display: none;
+        position: absolute;
+        width: 150px;
+        top: 50%;
+        right: 68px;
+        transform: translateY(-50%);
+        border: none;
+        border-bottom: 1px solid $COLOR_GRAY;
+        padding: 0 6px 6px 0;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 500;
+        &:focus {
+            outline: none;
+        } 
+    }
+    &__signIn-changeName_active {
+        display: block;
     }
 }
 
