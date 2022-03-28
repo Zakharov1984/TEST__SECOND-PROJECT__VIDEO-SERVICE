@@ -1,0 +1,75 @@
+.modal {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(51, 51, 51, .6);
+    &__active {
+        display: block;
+    }
+}
+
+.entry {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 304px;
+    min-height: 394px;
+    padding: 36px;
+    background-color: $COLOR_WHITE;
+    border-radius: 8px;
+    &__title {
+        margin-bottom: 24px;
+        font-size: 28px;
+        line-height: 1;
+        font-weight: 500;
+        color: $COLOR_GRAY;
+        text-align: center;
+    }
+    &__login, &__password {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $COLOR_GRAY;
+        padding: 0 6px 6px 0;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__password {
+        margin-top: 24px;
+    }
+    &__save {
+        display: flex;
+        align-items: center;
+        margin-top: 23px;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        color: $COLOR_GRAY;
+        &::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            border: 1px solid $COLOR_GRAY;
+            border-radius: 4px;
+        }
+    }
+    &__checkbox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    &__checkbox:checked+&__save::before {
+        background: url('../icons/modal/check.svg') center center / 10px 8px no-repeat;
+    }
+    &__btn {
+        position: absolute;
+        bottom: 36px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
