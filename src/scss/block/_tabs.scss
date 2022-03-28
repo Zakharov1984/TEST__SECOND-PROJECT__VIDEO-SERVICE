@@ -1,9 +1,11 @@
 .tabs {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     padding-top: 44px;
     &__item {
-        height: 42px;
+        box-sizing: content-box;
+        height: 40px;
         border: none;
         background-color: $COLOR_WHITE;
         font-size: 28px;

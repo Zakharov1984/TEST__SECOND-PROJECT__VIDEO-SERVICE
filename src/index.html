@@ -32,7 +32,7 @@
                 <button class="tabs__item tabs__item_mt-20" id="channels">Телеканалы</button>
             </div>
             <div class="content">
-                <section class="content-films">
+                <section class="content-films content-films_active" data-content="films">
                     <section class="novelties">
                         <h2 class="novelties__title title">Новинки</h2>
                         <ul class="novelties__items">
@@ -108,10 +108,7 @@
                         </ul>
                     </section>
                 </section>
-
-
-
-                <section class="content-channels">
+                <section class="content-channels" data-content="channels">
                     <div class="content-channels__item">
                         <div class="content-channels__item-logo">
                             <img src="img/channels/1st.png" alt="first channel" class="content-channels__item-logo-img">
@@ -215,5 +212,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/switchContent.js"></script>
 </body>
 </html>

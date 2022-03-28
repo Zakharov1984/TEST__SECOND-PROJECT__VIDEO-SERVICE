@@ -1,5 +1,23 @@
 .content {
+    position: relative;
+    min-height: 696px;
     padding-bottom: 72px;
+    background-color: $COLOR_WHITE;
+}
+
+.content-films, .content-channels {
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1000;
+    opacity: 0;
+    transition: opacity linear 1s;
+    &_active {
+        position: static;
+        z-index: 1;
+        opacity: 100%;
+    }
 }
 
 .novelties {
