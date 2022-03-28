@@ -33,6 +33,14 @@
             justify-content: center;
         }
     }
+    .content-channels {
+        &__item-logo {
+            width: 200px
+        }
+        &__item-program-element {
+            font-size: 14px;
+        }
+    }
     .footer {
         &__info-item {
             font-size: 13px;
@@ -67,6 +75,15 @@
             text-align: center;
         }    
     }
+    .content-channels {
+        &__item {
+            flex-direction: column;
+        }
+        &__item-wrapper {
+            align-self: flex-start;
+            margin-top: 20px;
+        }
+    }
     .footer {
         &__wrapper {
             align-items: center;
@@ -82,6 +99,15 @@
         &__title::before {
             left: calc(50% - 76px);
         }    
+    }
+    .content-channels {
+        &__item-name {
+            font-size: 16px;
+        }
+        &__item-program-element {
+            font-size: 12px;
+            margin-top: 4px;
+        }
     }         
 }
 

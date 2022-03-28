@@ -130,8 +130,8 @@
     margin-top: 27px;
     overflow-y: scroll;
     &__item {
-        height: 162px;
-        padding: 21px 0 19px;
+        min-height: 162px;
+        padding: 21px 10px 19px;
         display: flex;
         align-items: center;
         background-color: $COLOR_GRAY-LIGHT;
@@ -145,7 +145,7 @@
         align-items: center;
     }
     &__item-logo {
-        width: 400px;
+        width: 390px;
         display: flex;
         justify-content: center;
         align-items: center;
